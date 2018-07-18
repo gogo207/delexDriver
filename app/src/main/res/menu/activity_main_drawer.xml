@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:title="@string/history" />
+        <item
+            android:id="@+id/nav_portal"
+            android:icon="@drawable/portal"
+            android:title="@string/portal" />
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/support"
+            android:title="@string/support" />
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/invite_icon_off"
+            android:title="@string/invite" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/menu_payment_icon"
+            android:title="@string/payments" />
+        <item
+            android:id="@+id/nav_bank_details"
+            android:icon="@drawable/menu_bank"
+            android:title="@string/bank_details" />
+        <item
+            android:id="@+id/nav_bank_details_1"
+            android:icon="@drawable/menu_bank"
+            android:title="@string/bank_details" />
+        <item
+            android:id="@+id/nav_need_help"
+            android:icon="@drawable/live_chat"
+            android:title="@string/live_chat" />
+       <!-- <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/svg_menu_icon_logout"
+            android:title="@string/logout" />-->
+
+    </group>
+
+
+</menu>

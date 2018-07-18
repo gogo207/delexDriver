@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+    <ScrollView
+        android:layout_below="@+id/include_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/llBankDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dpTen"
+                android:padding="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bank"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.85"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAccountNoLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/spTwelve"
+                            android:text="@string/accno" />
+
+                        <TextView
+                            android:id="@+id/tvAccountNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="@dimen/spTen"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/accno" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAccountHolderLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/spTwelve"
+                            android:text="@string/accountHolder" />
+
+                        <TextView
+                            android:id="@+id/tvAccountHolder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="@dimen/spTen"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Ba Ba B" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBankNameLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/spTwelve"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/bankName" />
+
+                        <TextView
+                            android:id="@+id/tvbanknamedetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="@dimen/spTen"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Ba Ba B" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivCheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.15"
+                    android:src="@drawable/vector_chackmark_selected"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+                    android:layout_weight="0.15"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="@dimen/dpTwenty"
+                    android:layout_marginStart="@dimen/spTen"
+                    android:id="@+id/tv_edit_bank"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:id="@+id/ll_add_bank"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etBankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/bankName"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/profile_data"
+                        android:textColorHint="@color/profile_data"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilAccountNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etAccountNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/accno"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/profile_data"
+                        android:textColorHint="@color/profile_data"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilIBIN_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etIBIN_No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/IBIN_number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/profile_data"
+                        android:textColorHint="@color/profile_data"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilAccHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etAccHolderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/accountHolder"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/profile_data"
+                        android:textColorHint="@color/profile_data"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilRoutingNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etRoutingNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Routing_Number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/profile_data"
+                        android:textColorHint="@color/profile_data"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilSwiftNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etSwiftNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Swift_Code"
+                        android:textColor="@color/profile_data"
+                        android:textColorHint="@color/profile_data"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider2"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/tvAddBankAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/add_account"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@drawable/selector_for_link_stripe_text_btns"
+                    android:background="@drawable/selector_for_link_stripe"
+                    android:textSize="16sp"
+                    />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/llAddFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivAddFile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:src="@drawable/vector_add_file" />
+
+        <TextView
+            android:id="@+id/tvIdProof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/image"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

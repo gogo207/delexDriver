@@ -1,0 +1,39 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/snackbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="@integer/design_snackbar_text_max_lines"
+        android:textSize="14sp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:textAppearance="@style/TextAppearance.Design.Snackbar.Message"
+        tools:text="Text Goes Here" />
+
+    <Button
+        android:id="@+id/snackbar_action"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginLeft="@dimen/design_snackbar_extra_spacing_horizontal"
+        android:layout_marginStart="@dimen/design_snackbar_extra_spacing_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingTop="14dp"
+        android:textColor="?attr/colorAccent"
+        android:visibility="gone"
+        tools:text="Action"
+        android:clickable="true"
+        tools:visibility="visible" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">إلغاء</string>
+    <string name="save">حفظ</string>
+    <string name="saving_image">جار حفظ الصورة</string>
+    <string name="preparing_card">إعداد البطاقة</string>
+    <string name="no_storage_card">لا توجد بطاقة تخزين</string>
+    <string name="not_enough_space">مساحة غير كافية</string>
+</resources>

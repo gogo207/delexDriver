@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_custom_f"
+        android:background="@color/colorPrimary">
+        <!--Hamburger Icon-->
+        <ImageView
+            android:id="@+id/ivMenuBtnToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_menu_icon_on"/>
+        <!--Fragment Title-->
+        <TextView
+            android:id="@+id/tvTitleToolbar"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="My Bookings"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/viewTop"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dpFifity">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_appname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_splash"
+                        android:textColor="@color/dayrunner"
+                        android:textSize="@dimen/spTwentySix"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/login_logo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_splash_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/splash_msg"
+                    android:textColor="@color/color1"
+                    android:textSize="@dimen/spThirteen"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_log_mail_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/et_log_mail_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_no_email_hint"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_log_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/et_log_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_log_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dpForty"
+                android:layout_marginRight="@dimen/dpForty"
+                android:layout_marginTop="@dimen/dpTwenty"
+                android:background="@drawable/sigin_back_grey"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dpTwenty"
+                android:paddingTop="@dimen/dpTwenty"
+                android:text="@string/signin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spSixteen" />
+
+            <TextView
+                android:id="@+id/tv_log_forgortpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dpTen"
+                android:text="@string/forgot_pass"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTen" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvBottom"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_log_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/login_signup_txt" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="200dp"
+        android:layout_above="@id/cvBottom"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_corner_bank_acc_gunsmoke"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="ENGLISH"
+        android:paddingLeft="50dp"
+        android:textSize="14sp"
+        android:drawablePadding="20dp"
+        android:drawableRight="@mipmap/drop_down"
+        android:visibility="visible"
+        android:textColor="@color/gunsmoke" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:id="@+id/jobPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+         />
+
+    <TextView
+        android:id="@+id/tvNoImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dpTen"
+        android:paddingBottom="@dimen/dpTen"
+        android:text="No Doucuments Uploaded"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/spTwelve"
+        android:visibility="gone" />
+
+</FrameLayout>
+
+</RelativeLayout>

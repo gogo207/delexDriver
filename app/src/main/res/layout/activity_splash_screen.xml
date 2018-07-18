@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:paddingTop="@dimen/dpThirtyFive"
+        android:src="@drawable/splash"
+        android:visibility="gone" />
+
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/cv_singlerow_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardElevation="3dp"
+        android:visibility="gone"
+        card_view:cardUseCompatPadding="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dpFifity"
+        android:layout_marginLeft="@dimen/dpTen"
+        android:layout_marginRight="@dimen/dpTen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dpFifity">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_appname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_splash"
+                        android:textColor="@color/dayrunner"
+                        android:textSize="@dimen/spTwentySix"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/splash_r"
+                        android:paddingLeft="@dimen/dpFive"
+                        android:layout_marginTop="-10dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_splash_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/splash_msg"
+                    android:textSize="@dimen/spThirteen"
+                    android:textColor="@color/color1"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpPointZeroFive"
+                    android:background="@color/tablayout"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/dpZero"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/login"
+                            android:gravity="center"
+                            android:textColor="@color/color2"
+                            android:textSize="@dimen/spSixteen"/>
+
+                        <View
+                            android:layout_width="@dimen/dpPointZeroFive"
+                            android:layout_height="wrap_content"
+                            android:background="@color/tablayout"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_signup"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/dpZero"
+                        android:layout_height="match_parent"
+                        android:text="@string/signup"
+                        android:gravity="center"
+                        android:textColor="@color/color2"
+                        android:textSize="@dimen/spSixteen"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>-->
+
+</RelativeLayout>

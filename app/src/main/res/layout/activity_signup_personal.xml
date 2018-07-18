@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+
+    <ScrollView
+        android:id="@+id/sv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_next"
+        android:layout_below="@+id/include_actionbar">
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dpForty"
+            android:paddingRight="@dimen/dpForty">
+
+            <TextView
+                android:id="@+id/tv_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dpTwenty"
+                android:paddingTop="@dimen/dpTwenty"
+                android:text="@string/persoanl"
+                android:textColor="@color/green_menu"
+                android:textSize="@dimen/spNineteen" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_profile"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:id="@+id/iv_signup_pp"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginEnd="@dimen/dpTen"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="@dimen/dpTen"
+                        android:layout_marginStart="5dp"
+                        android:contentDescription="@string/app_name"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/signup_profile_default_image" />
+
+                    <ImageView
+                        android:id="@+id/iv_img_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/add_image" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_toEndOf="@+id/rl_profile"
+                    android:layout_toRightOf="@+id/rl_profile"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/fname"
+                            android:inputType="textCapWords"
+                            android:minLines="1"
+                            android:textSize="@dimen/spFourteen" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/et_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lname"
+                            android:inputType="textCapWords"
+                            android:minLines="1"
+                            android:textSize="@dimen/spFourteen" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_signup_work_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/rb_signup_work_operator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/operator" />
+
+                <RadioButton
+                    android:id="@+id/rb_signup_work_free"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/free_lancer" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_signup_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/invoice_addspecial_back"
+                android:drawableEnd="@drawable/svg_ic_chevron_right"
+                android:drawableRight="@drawable/svg_ic_chevron_right"
+                android:gravity="center_vertical"
+                android:hint="@string/title_activity_select_an_operator"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textColor="@color/color_sup_txt"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/countryPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive">
+
+                <ImageView
+                    android:id="@+id/flag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/flag_us"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/flag"
+                    android:layout_toRightOf="@+id/flag"
+                    android:text="+1"
+                    android:textColor="@color/color_sup_txt"
+                    android:textSize="@dimen/spFourteen" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/code"
+                    android:layout_toRightOf="@+id/code">
+
+                    <EditText
+                        android:id="@+id/et_signup_mob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone_num"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:minLines="1"
+                        android:textSize="@dimen/spFourteen" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:inputType="textEmailAddress"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_signup"
+                    android:inputType="textPassword"
+                    android:minLines="1"
+                    android:textSize="@dimen/spFourteen" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_zones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/zones"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_signup_zones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/transparent"
+                android:drawableEnd="@drawable/svg_ic_chevron_right"
+                android:drawableRight="@drawable/svg_ic_chevron_right"
+                android:hint="@string/select_zone"
+                android:minLines="1"
+                android:textSize="@dimen/spFourteen" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dpOne"
+                android:layout_marginBottom="@dimen/dpFive"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/divider3" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_referral"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpFive">
+
+                <EditText
+                    android:id="@+id/et_referral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/referral"
+                    android:singleLine="true"
+                    android:textSize="@dimen/spFourteen" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_licence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/driving_lic"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="@dimen/dpTen">
+
+               <!-- <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_signup_licence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:orientation="horizontal" />-->
+
+                <RelativeLayout
+                    android:id="@+id/ll_add_licence"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_uploader_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_camera_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/take_photo"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/spTen" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/tv_camera_up"
+                        android:contentDescription="@string/app_name"
+                        android:background="@drawable/svg_camera_white"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_camera_uploader3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:visibility="visible" />
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:text="@string/id_proof"
+                android:textColor="@color/lig_green2"
+                android:textSize="@dimen/spTwelve" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="@dimen/dpTen">
+
+                <!-- <android.support.v7.widget.RecyclerView
+                     android:id="@+id/rv_signup_licence"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_marginBottom="@dimen/dpFive"
+                     android:orientation="horizontal" />-->
+
+                <RelativeLayout
+                    android:id="@+id/ll_add_id_proof"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_uploader_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_camera_up1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/take_photo"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/spTen" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/tv_camera_up1"
+                        android:contentDescription="@string/app_name"
+                        android:background="@drawable/svg_camera_white"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_camera_uploader4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:visibility="visible" />
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_next_back"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spEighteen" />
+
+    <LinearLayout
+        android:id="@+id/ll_nxt_progress"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dpFive"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dpFive"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dpFifteen"
+            android:layout_height="@dimen/dptwo"
+            android:background="@drawable/svg_rect"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:layout_width="@dimen/dptwo"
+            android:layout_height="@dimen/dptwo"
+            android:layout_marginLeft="@dimen/dptwo"
+            android:layout_marginStart="@dimen/dptwo"
+            android:background="@drawable/svg_rect_dot"
+            android:contentDescription="@string/app_name" />
+
+    </LinearLayout>
+
+</RelativeLayout>

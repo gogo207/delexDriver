@@ -1,0 +1,54 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="128.0"
+    android:viewportWidth="128.0">
+    <path
+        android:fillAlpha="1"
+        android:fillColor="#E9364B"
+        android:pathData="M59.6,0h8v40h-8V0z" />
+    <path
+        android:fillAlpha="0.2"
+        android:fillColor="#E9364B"
+        android:pathData="M92.19,6.37l6.93,4l-20,34.64l-6.93,-4L92.19,6.37z" />
+    <path
+        android:fillAlpha="0.2"
+        android:fillColor="#E9364B"
+        android:pathData="M117.23,28.19l4,6.93l-34.64,20l-4,-6.93L117.23,28.19z" />
+    <path
+        android:fillAlpha="0.2"
+        android:fillColor="#E9364B"
+        android:pathData="M128,59.6l0,8l-40,0l0,-8L128,59.6z" />
+    <path
+        android:fillAlpha="0.2"
+        android:fillColor="#E9364B"
+        android:pathData="M121.63,92.19l-4,6.93l-34.64,-20l4,-6.93L121.63,92.19z" />
+    <path
+        android:fillAlpha="0.3"
+        android:fillColor="#E9364B"
+        android:pathData="M99.81,117.23l-6.93,4l-20,-34.64l6.93,-4L99.81,117.23z" />
+    <path
+        android:fillAlpha="0.4"
+        android:fillColor="#E9364B"
+        android:pathData="M68.4,128l-8,0l0,-40l8,0L68.4,128z" />
+    <path
+        android:fillAlpha="0.5"
+        android:fillColor="#E9364B"
+        android:pathData="M35.81,121.63l-6.93,-4l20,-34.64l6.93,4L35.81,121.63z" />
+    <path
+        android:fillAlpha="0.6"
+        android:fillColor="#E9364B"
+        android:pathData="M10.77,99.81l-4,-6.93l34.64,-20l4,6.93L10.77,99.81z" />
+    <path
+        android:fillAlpha="0.7"
+        android:fillColor="#E9364B"
+        android:pathData="M0,68.4l0,-8l40,0l0,8L0,68.4z" />
+    <path
+        android:fillAlpha="0.8"
+        android:fillColor="#E9364B"
+        android:pathData="M6.37,35.81l4,-6.93l34.64,20l-4,6.93L6.37,35.81z" />
+    <path
+        android:fillAlpha="0.9"
+        android:fillColor="#E9364B"
+        android:pathData="M28.19,10.77l6.93,-4l20,34.64l-6.93,4L28.19,10.77z" />
+</vector>

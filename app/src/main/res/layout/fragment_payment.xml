@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/layout_custom_tool_bar" />
+
+    <include
+        android:id="@+id/activity_action_bar"
+        layout="@layout/layout_custom_action_bar"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_payment_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dpFifteen"
+        android:layout_marginRight="@dimen/dpFifteen"
+        android:layout_marginStart="@dimen/dpFifteen"
+        android:layout_marginEnd="@dimen/dpFifteen"
+        android:layout_marginTop="@dimen/dpTwenty"
+        android:layout_below="@+id/actionbar"/>
+
+    <TextView
+        android:id="@+id/tv_payment_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/addcard"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="19.13dp"
+        android:background="@drawable/selector_layout"
+        android:layout_below="@+id/lv_payment_cards"
+        android:layout_marginLeft="@dimen/dpFifteen"
+        android:layout_marginRight="@dimen/dpFifteen"
+        android:layout_marginStart="@dimen/dpFifteen"
+        android:layout_marginEnd="@dimen/dpFifteen"
+        android:layout_marginTop="@dimen/dpTwenty" />
+</RelativeLayout>

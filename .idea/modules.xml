@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\PK\PK\PK\7Moola\7moola_android_driver.iml" filepath="D:\PK\PK\PK\7Moola\7moola_android_driver.iml" />
+      <module fileurl="file://C:\Users\Administrator\AndroidStudioProjects\DelexDriver\Delex.iml" filepath="C:\Users\Administrator\AndroidStudioProjects\DelexDriver\Delex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DelexDriverOrigin.iml" filepath="$PROJECT_DIR$/DelexDriverOrigin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DelexDriver/Simple_crop_lib/Simple_crop_lib.iml" filepath="$PROJECT_DIR$/../DelexDriver/Simple_crop_lib/Simple_crop_lib.iml" />
+      <module fileurl="file://D:\PK\PK\PK\7Moola\Truckr.iml" filepath="D:\PK\PK\PK\7Moola\Truckr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firebasechat/firebasechat.iml" filepath="$PROJECT_DIR$/firebasechat/firebasechat.iml" />
+    </modules>
+  </component>
+</project>

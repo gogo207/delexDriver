@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/toolBarTermsConds"
+    android:background="@color/colorPrimary"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <RelativeLayout
+        android:id="@+id/rlBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:background="@drawable/selector_layout"
+        android:paddingRight="@dimen/dpTen"
+        android:paddingLeft="@dimen/dpTen"
+        android:paddingStart="@dimen/dpTen"
+        android:paddingEnd="@dimen/dpTen">
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/back_selector"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvToolBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        android:textSize="19.13dp"
+        android:maxLines="1"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/rlToolBarEnd"
+        android:layout_width="70dp"
+        android:layout_height="?android:actionBarSize"
+        android:visibility="gone"
+        android:background="@drawable/selector_layout"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tvToolBarEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dpFive"
+            android:paddingStart="@dimen/dpFive"
+            android:paddingRight="@dimen/dpFive"
+            android:paddingEnd="@dimen/dpFive"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/spFourteen"/>
+    </RelativeLayout>
+</RelativeLayout>

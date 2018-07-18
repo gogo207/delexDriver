@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_actionbar"
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_actionbar"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dpThirty"
+            android:paddingLeft="@dimen/dpForty"
+            android:paddingRight="@dimen/dpForty"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_editphone_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dpTwenty"
+                android:text="@string/edit_phone_msg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dpThirty">
+
+                <TextView
+                    android:id="@+id/tv_phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dpFive"
+                    android:text="@string/phone_num"
+                    android:textColor="@color/profile_head"
+                    android:textSize="@dimen/spTwelve" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_vechtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_phone_num">
+
+                    <RelativeLayout
+                        android:id="@+id/countryPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/flag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginStart="3dp"
+                            android:background="@drawable/flag_us"
+                            android:contentDescription="@string/app_name" />
+
+                        <TextView
+                            android:id="@+id/code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/flag"
+                            android:layout_toRightOf="@+id/flag"
+                            android:text="+1"
+                            android:textColor="@color/profile_data"
+                            android:textSize="@dimen/spSixteen" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_phone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/dpFive"
+                        android:layout_toEndOf="@+id/countryPicker"
+                        android:layout_toRightOf="@+id/countryPicker"
+                        android:background="@color/white"
+                        android:inputType="phone"
+                        android:textColor="@color/profile_data"
+                        android:textSize="@dimen/spSixteen" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dpOne"
+                    android:layout_below="@+id/rl_vechtype"
+                    android:background="@color/profile_underline" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/enterTheName"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dpThirty"
+                android:paddingLeft="@dimen/dpForty"
+                android:paddingRight="@dimen/dpForty">
+
+                <TextView
+                    android:id="@+id/tv_editpas_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dpTwenty"
+                    android:text="@string/enter_new_pass"
+                    android:textColor="@color/lig_green"
+                    android:textSize="@dimen/spSixteen" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_newpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dpFive"
+                        android:text="@string/new_pass"
+                        android:textColor="@color/profile_head"
+                        android:textSize="@dimen/spTwelve" />
+
+
+                    <EditText
+                        android:id="@+id/et_newpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_newpass"
+                        android:layout_marginBottom="@dimen/dpFive"
+                        android:background="@color/white"
+                        android:inputType="textPassword"
+                        android:textColor="@color/profile_data"
+                        android:textSize="@dimen/spSixteen" />
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dpOne"
+                        android:layout_below="@+id/et_newpass"
+                        android:background="@color/profile_underline" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_re_newpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dpFive"
+                        android:text="@string/re_ent_pass"
+                        android:textColor="@color/profile_head"
+                        android:textSize="@dimen/spTwelve" />
+
+
+                    <EditText
+                        android:id="@+id/et_re_newpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/tv_re_newpass"
+                        android:layout_marginBottom="@dimen/dpFive"
+                        android:background="@color/white"
+                        android:inputType="textPassword"
+                        android:textColor="@color/profile_data"
+                        android:textSize="@dimen/spSixteen" />
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dpOne"
+                        android:layout_below="@+id/et_re_newpass"
+                        android:background="@color/profile_underline" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dpPointZeroFive"
+                android:background="@color/divider" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dpPointZeroFive"
+            android:background="@color/divider" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_next_back"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spEighteen" />
+
+</RelativeLayout>

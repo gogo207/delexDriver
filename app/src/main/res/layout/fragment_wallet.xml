@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/incABar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_custom_tool_bar"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/btnConfirmAndPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dpTen"
+        android:background="@drawable/create_account_btn_selector"
+        android:text="@string/confirmAndPay"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incABar"
+        android:layout_above="@id/btnConfirmAndPay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvCurCreditLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_credit"
+                android:textSize="14sp"
+                android:textColor="@color/grayLightTextColor"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tvWalletBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="$7454.77"
+                android:layout_below="@id/tvCurCreditLabel"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tvWalletalert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="*"
+                android:layout_toEndOf="@+id/tvWalletBalance"
+                android:layout_toRightOf="@+id/tvWalletBalance"
+                android:layout_marginLeft="@dimen/dpFive"
+                android:layout_below="@id/tvCurCreditLabel"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"/>
+
+            <View
+                android:id="@+id/view0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/shadow_color"
+                android:layout_below="@id/tvWalletBalance"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/llHardSoftLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/view0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvSoftLimitLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/softLimit"
+                    android:textSize="12sp"
+                    android:textColor="@color/grayLightTextColor"
+                    android:gravity="start"/>
+
+                <TextView
+                    android:id="@+id/tvSoftLimitValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="@color/yellow_light"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="2dp"
+                    android:layout_height="15dp"
+                    android:background="@color/gray"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvHardLimitLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hardLimit"
+                    android:textSize="12sp"
+                    android:textColor="@color/grayLightTextColor"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvHardLimitValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="@color/red_light"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRecentTransactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:layout_below="@id/llHardSoftLimit"
+                android:layout_margin="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/recentTransactions"
+                android:background="@drawable/shape_rectangle_lgray"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"/>
+
+            <include
+                android:id="@+id/incAppDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_divider_all"
+                android:layout_below="@id/btnRecentTransactions"/>
+
+            <!-- PAY USING CARD -->
+            <TextView
+                android:id="@+id/tvPayUsingCardLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/payUsingCard"
+                android:layout_below="@id/incAppDivider"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvCardNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/cardNoHidden"
+                android:textColor="@color/grayTextColor"
+                android:drawableStart="@drawable/history_card_icon"
+                android:drawableLeft="@drawable/history_card_icon"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_below="@id/tvPayUsingCardLabel"
+                android:drawableEnd="@drawable/history_next_arrow_icon"
+                android:drawableRight="@drawable/history_next_arrow_icon"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/shadow_color"
+                android:layout_below="@id/tvCardNo"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_centerHorizontal="true"/>
+
+            <!-- PAY AMOUNT -->
+
+            <TextView
+                android:id="@+id/tvPayAmountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/payAmount"
+                android:layout_below="@id/view2"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/llPayAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingStart="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:layout_below="@id/tvPayAmountLabel">
+
+                <TextView
+                    android:id="@+id/tvCurrencySymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:gravity="start|center_vertical" />
+
+                <EditText
+                    android:id="@+id/etPayAmountValue"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/_0_00"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:inputType="numberDecimal"
+                    android:gravity="start|center_vertical"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/shadow_color"
+                android:layout_below="@id/llPayAmount"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/view3"
+                android:background="@color/backgroundcolor"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivYellowIcon"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/shape_box_square_lyellow"
+                        android:layout_gravity="start|center_vertical"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/tvSoftLimitMsgLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/softLimit"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayTextColor"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvSoftLimitMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/grayTextColor"
+                        android:gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ivRedIcon"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/shape_box_square_red"
+                        android:layout_gravity="start|center_vertical"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/tvHardLimitMsgLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hardLimit"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayTextColor"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvHardLimitMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/grayTextColor"
+                        android:gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvalert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/grayTextColor"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvalertMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayTextColor"
+                        android:gravity="start"
+                        android:text="You owe Ebba $234"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

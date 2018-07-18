@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ModaChat</string>
+
+    <string name="string_38">Already downloading!!</string>
+    <string name="string_211">Permission denied</string>
+    <string name="string_393">Download Confirmation</string>
+    <string name="string_506">Download </string>
+    <string name="string_534"> size image?</string>
+    <string name="string_580">OK</string>
+    <string name="string_591">CANCEL</string>
+    <string name="string_578">CONTINUE</string>
+    <string name="string_535">size video?</string>
+    <string name="string_39">Download failed!!</string>
+    <string name="string_40">File not found!!</string>
+    <string name="string_41">Download canceled!!</string>
+    <string name="string_4">No internet connection!!</string>
+    <string name="string_280">Image</string>
+    <string name="string_281">Video</string>
+    <string name="string_664">IMAGE</string>
+    <string name="string_665">VIDEO</string>
+    <string name="string_42">Image downloaded!!</string>
+    <string name="string_43">Video downloaded!!</string>
+    <string name="string_45">Allow external storage access to download %s</string>
+    <string name="string_644">Gallery</string>
+    <string name="string_982">Access external storage permission required to save captured video!!</string>
+    <string name="string_67">Allow gallery access!!</string>
+    <string name="string_804">Select Picture</string>
+    <string name="string_981">Access external storage permission required to save captured image!!</string>
+    <string name="string_57">Access external storage permission denied!!</string>
+    <string name="string_61">Camera not found!!</string>
+    <string name="string_764">Video can\'t be selected,Try another video!!</string>
+    <string name="string_52">Can\'t send video greater than </string>
+    <string name="string_51">Error sending video,Try again!!</string>
+    <string name="string_49">Error sending image,Try again!!</string>
+    <string name="string_50">Image can\'t be sent,try capturing again!!</string>
+    <string name="string_48">Image can\'t be selected,try different image!!</string>
+    <string name="string_56"> Mb!!</string>
+    <string name="string_207">Today</string>
+    <string name="string_208">Yesterday</string>
+    <string name="string_639">CHATS</string>
+    <string name="string_948">No chat with</string>
+    <string name="string_55">Try downloading!!</string>
+    <string name="string_65">Allow camera access!!</string>
+    <string name="string_62">Access camera permission denied!!</string>
+</resources>

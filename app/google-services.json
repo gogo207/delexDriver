@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "project_number": "281825045446",
+    "firebase_url": "https://delex-200809.firebaseio.com",
+    "project_id": "delex-200809",
+    "storage_bucket": "delex-200809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281825045446:android:6965591560e364d1",
+        "android_client_info": {
+          "package_name": "com.delex.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281825045446-j0toe8ah8chofo1sk19pjrlrbjn06v9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.delex.customer",
+            "certificate_hash": "01f813f70ccd387deaecdc0cdc6d8d0a757f2abc"
+          }
+        },
+        {
+          "client_id": "281825045446-8rafne25pd91bd278v2n6s79rcg1it38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGJH32FZi9QN2Odq3HFdDFq3OkxnJXb0E"
+        },
+        {
+          "current_key": "AIzaSyBon9J3sYWvdGflVImc47E042ZubFHE43M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281825045446-8rafne25pd91bd278v2n6s79rcg1it38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281825045446:android:a615ecd644aa79eb",
+        "android_client_info": {
+          "package_name": "com.delex.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281825045446-8rafne25pd91bd278v2n6s79rcg1it38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGJH32FZi9QN2Odq3HFdDFq3OkxnJXb0E"
+        },
+        {
+          "current_key": "AIzaSyBon9J3sYWvdGflVImc47E042ZubFHE43M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
